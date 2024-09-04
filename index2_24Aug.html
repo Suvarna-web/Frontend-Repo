@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .face{
+            background-color: plum;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .eye{
+            background-color: black;
+            height: 100px;
+            width: 50px;
+            border-radius: 50%;
+            position:absolute;
+        }
+        #e1{
+            top: 50px;
+            left: 70px;
+        }
+        #e2{
+            top: 50px;
+            right: 70px;
+        }
+        .mouth{
+            border-bottom: 10px solid rgb(0, 0, 0);
+            height:100px ;
+            width: 100px;
+            position: absolute;
+            bottom: 70px;
+            left: 95px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="eye" id="e1"></div>
+        <div class="eye" id="e2"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
