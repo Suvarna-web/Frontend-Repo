@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+ <style>
+    div{
+        border: 2px solid black;
+        height:100px ;
+        width: 100px;
+        border-radius: 40%;
+        
+    }
+    #box-1{
+        background-color: red;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        z-index:1 ;
+    }
+    #box-2{
+        background-color:yellow;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+    #box-3{
+        background-color: green;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: -2
+    }
+    #box-4{
+        background-color: blue;
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        z-index: -1;
+    }
+ </style>
+</head>
+<body>
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
+  <div id="box-4"></div>  
+</body>
+</html>
