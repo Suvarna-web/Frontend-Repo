@@ -1,107 +1,96 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  }
-  html,
-  body {
+}
+
+html,
+body{
     height: 100%;
     width: 100%;
-    
-  }
-  body{
+}
+
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .container{
-    height: 500px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    gap: 40px;
-  }
-  .box{
-    background-color: aquamarine;
-    border: 1px solid black;
-  }
-  .cover{
-    background-color: plum;
-    height: 100%;
-    width: 100%;
-  }
-  #c1:hover{
-transform: scale(1.2);
-transition-property: transform;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
 }
-#c2:hover{
-  transform: translateX(-30px);
-  transform: translateY(-30px);
-  transform: translate(30px,30px);
-  transition-property: transform;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
 
-}  
-#c3:hover{
-  transform: skewX(20deg);
-  transform: skewY(20deg);
- transition-property: transform;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+.window{
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+}
 
-}  
-#c4:hover{
-  transform: perspective(200px)rotate(360deg);
-  transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+.container{
+    background-color: black;
+    height:600px ;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
 
-}  
-#c5:hover{
-  transform: perspective(200px) rotate(720deg);
-  transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+.door{
+    background-color: brown;
+    height:100%;
+    width: 100%;
+    transform-origin: bottom;
+    animation: openclose 1s ease-in 1s infinite alternate;
+}
 
-}  
-#c6:hover{
-  transform: perspective(400px)rotateZ(3600deg);
-  transition-property: transform;
-    transition-duration: 5s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+/*.door:hover{
+    transform: perspective(200px) rotateY(60deg);
+    transition: transform 1s linear;
+}*/
 
-}  
-#c7:hover{
-  transform: perspective(200px) translate3d(30px,10px,5px);
-  transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+@keyframes openclose {
+    0%{
+        transform: perspective(400px) rotateY(0deg);
+    }
+    70%{
+        transform: perspective(400px) rotateY(90deg);
+    }
+    100%{
+        transform: perspective(400px) rotateY(90deg);
+    }
+    
+}
 
-}  
-#c8:hover{
-  transform: perspective(200px) rotate3d(1,1,1,40deg);
-  transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+.bubble{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(19, 216, 108);
+    border-radius: 50%;
+    position: relative;
+    animation: up 3s ease-out infinite;
+}
 
-}  
-#c9:hover{
- background-color: red;
-  transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 3s;
+@keyframes up{
+    0%{
+        transform: scale(1);
+        bottom: 0px;
+    }
+    20%{
+        left: -100px;
+    }
+    40%{
+        left: 100px;
+    }
+    60%{
+        left: -100px;
+    }
+    80%{
+        transform: scale(8);
+        bottom: 280px;
+        background-color: rgba(240,248,255,0.3);
+        box-shadow: 0px 0px 5px rgba(240,248,255,0.1);
+    }
+    100%{
+        transform: scale(8.2);
+        bottom: 300px;
+        background-color: rgba(240,248,255,0.2);
+        box-shadow:  0px 0px 5px rgba(240,248,255,0.15);
+        left: 0px;
+    }
 }

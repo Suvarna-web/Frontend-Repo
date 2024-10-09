@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .square {
+        background-color: aliceblue;
+        min-width: 30px;
+        min-height: 30px;
+        /* border: 1px solid rgb(255, 0, 0); */
+        padding: 10px;
+        animation: ro 9s ease-in-out infinite;
+      }
+
+      .black {
+        background-color: black;
+      }
+
+      @keyframes ro {
+        from {
+          transform: rotate(360deg);
+        }
+        to {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square">
+      <div class="square black">
+        <div class="square">
+          <div class="square black">
+            <div class="square">
+              <div class="square black">
+                <div class="square">
+                  <div class="square black">
+                    <div class="square">
+                      <div class="square black">
+                        <div class="square">
+                          <div class="square black">
+                            <div class="square">
+                              <div class="square black"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
