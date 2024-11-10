@@ -1,51 +1,50 @@
-//var a= Number (prompt("Enter your Number:"));
-//console.log(a)
+// Ex.1
+// console.log("Object: Player");
 
+// let Player = {
+//   name: "Prakash",
+//   age: 25,
+//   noOfMadels: 11,
+//   level: "National",
+// };
 
-//let isDone =confirm ("do you task is complete")
-//console.log(isDone)
+// console.log(Player);
+// console.log(Player.name);
+// console.log(Player.level);
+// console.log(Player.age);
+// Player.age = 30;
+// ---------------------------------------
+// method 1
+let u1 = { name: "Prakash", age: 25 };
+let u2 = { name: "Rakesh", age: 30 };
+let u3 = { name: "Rajesh", age: 35 };
 
+var users = [u1, u2, u3];
 
-//let notification =alert("you Have 14 Unread Message")
-//console.log(notification)
-
-var a ="Hello";
-console.log(Number(a))
-console.log(typeof NaN)
-
-var b ="23"
-console.log(Number(b))
-
-var c ="ajay"
-console.log(Boolean(c))
-
-var d =""
-console.log(Boolean(d))
-
-var n =45
-console.log(String(n))
-
-var Num = NaN;
-console.log(String(Num))
-
-var k = 0;
-console.log(Boolean(k))
-
-var j = 5;
-console.log(Boolean(j))
-
-var f = true;
-console.log(String(f))
-console.log(Number(f))
-
-
-
-
-
-
-
-
-
-
-
-
+// // method 2
+var user = [
+  { name: "Prakash", age: 25 }, //0
+  { name: "Rakesh", age: 30 }, //1
+  { name: "Rajesh", age: 35 }, //2
+  { name: "Ramesh", age: 65 },
+  { name: "Ranjeet", age: 85 },
+  { name: "jeet", age: 25 },
+  { name: "Abhijeet", age: 51 },
+  { name: "Sujeet", age: 35 }, //n-1
+];
+//n = user.lenght
+// for (let i = 0; i < user.length; i++) {
+//   console.log("User " + (i + 1) + " : " + user[i].name);
+// }
+// using for of loop:
+for (let u of user) {
+  console.log(u.name + "'s age : " + u.age);
+}
+// Ex.2 
+// animal
+// Ex.3
+// Electronic_Devices
+// Ex.4
+// loctions
+// Ex.5
+// subject
