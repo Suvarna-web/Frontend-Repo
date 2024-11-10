@@ -1,46 +1,27 @@
-let li2= document.querySelector("hero");
-let mylist = document.querySelector(".list");
-let mycontainer = document.querySelector(".container");
+ let mylist = document.querySelector(".list");
+let Hero = document.querySelector("#hero");
+let ul = document.querySelector(".itemList");
 
-let newElem=document.createElement("li");
-let text="this is demo text 5";
-newElem.innerText = text;
-mylist.appendChild(newElem);
+console.log(mylist);
+console.log(Hero);
 
-let newElem2=document.createElement("li");
-let text2="this is demo text 6";
-newElem2.innerText = text2;
-mylist.appendChild(newElem2);
+let li1 = Hero.previousElementSibling;
+let li3 = Hero.nextElementSibling;
 
-let newElem3=document.createElement("li");
-let text3="this is demo text 0";
-newElem3.textContent = text3;
+console.log(li1);
+console.log(li3);
 
-mylist.insertBefore(newElem3, mylist.firstElementChild);
+let fElem = mylist.firstElementChild.firstElementChild;
+let lElem = mylist.firstElementChild.lastElementChild;
 
-let newElem4=document.createElement("li");
-let text4="this is demo text 2.5";
-newElem4.innerText = text4;
-mylist.insertBefore(newElem4,li2.nextElementSibling);
+console.log(fElem);
+console.log(lElem);
 
-let items=mylist.children;
-let newElem5=document.createElement("li");
-let text5="this is demo text 4,5";
-newElem5.textContent = text5;
+let items = ul.children;
+console.log(item[0] , items[0]);
+console.log(item[1] , items[1]);
+console.log(item[2] , items[2]);
+console.log(item[3] , items[3]);
 
-//--------------------------------
-
-let p1=document.createElement("p");
-let p2=document.createElement("p");
-let p3=document.createElement("p");
-let p4=document.createElement("p");
-p1.textContent="this a p1";
-p2.textContent="this a p2";
-p3.textContent="this a p3";
-p4.textContent="this a p4";
-
-mylist.append(p1);
-mylist.prepend(p2);
-mylist.before(p3);
-mylist.after(p4);
-
+let pElem = Hero.parentElement;
+console.log(pElem);
