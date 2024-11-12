@@ -1,27 +1,41 @@
- let mylist = document.querySelector(".list");
-let Hero = document.querySelector("#hero");
-let ul = document.querySelector(".itemList");
+console.log("Math Object");
 
-console.log(mylist);
-console.log(Hero);
+let pi = Math.PI;
+console.log("PI:"+pi);
 
-let li1 = Hero.previousElementSibling;
-let li3 = Hero.nextElementSibling;
+let e= Math.E;
+console.log("Euler's Number:" +e);
 
-console.log(li1);
-console.log(li3);
+let max =Math.max(45,23,78,90,25);
+console.log("Maximum Number: "+max);
 
-let fElem = mylist.firstElementChild.firstElementChild;
-let lElem = mylist.firstElementChild.lastElementChild;
+let min =Math.min(45,23,78,90,25);
+console.log("Minimum Number: "+min);
 
-console.log(fElem);
-console.log(lElem);
+let a= 5.1;
+let b= 5.9;
+let c= 5.0;
+let d= 5.5;
 
-let items = ul.children;
-console.log(item[0] , items[0]);
-console.log(item[1] , items[1]);
-console.log(item[2] , items[2]);
-console.log(item[3] , items[3]);
+console.log(Math.round(a));
+console.log(Math.round(b));
+console.log(Math.round(c));
+console.log(Math.round(d));
 
-let pElem = Hero.parentElement;
-console.log(pElem);
+
+console.log(Math.ceil(a));
+console.log(Math.ceil(b));
+console.log(Math.ceil(c));
+console.log(Math.ceil(d));
+
+
+console.log(Math.floor(a));
+console.log(Math.floor(b));
+console.log(Math.floor(c));
+console.log(Math.floor(d));
+
+console.log("g²: "+ Math.pow(8,2));
+console.log("e²: "+ Math.exp(2));
+console.log("|9|:"+ Math.abs(9));
+console.log("|-9|:"+ Math.abs(-9));
+
