@@ -1,41 +1,46 @@
-console.log("Math Object");
+let li2= document.querySelector("hero");
+let mylist = document.querySelector(".list");
+let mycontainer = document.querySelector(".container");
 
-let pi = Math.PI;
-console.log("PI:"+pi);
+let newElem=document.createElement("li");
+let text="this is demo text 5";
+newElem.innerText = text;
+mylist.appendChild(newElem);
 
-let e= Math.E;
-console.log("Euler's Number:" +e);
+let newElem2=document.createElement("li");
+let text2="this is demo text 6";
+newElem2.innerText = text2;
+mylist.appendChild(newElem2);
 
-let max =Math.max(45,23,78,90,25);
-console.log("Maximum Number: "+max);
+let newElem3=document.createElement("li");
+let text3="this is demo text 0";
+newElem3.textContent = text3;
 
-let min =Math.min(45,23,78,90,25);
-console.log("Minimum Number: "+min);
+mylist.insertBefore(newElem3, mylist.firstElementChild);
 
-let a= 5.1;
-let b= 5.9;
-let c= 5.0;
-let d= 5.5;
+let newElem4=document.createElement("li");
+let text4="this is demo text 2.5";
+newElem4.innerText = text4;
+mylist.insertBefore(newElem4,li2.nextElementSibling);
 
-console.log(Math.round(a));
-console.log(Math.round(b));
-console.log(Math.round(c));
-console.log(Math.round(d));
+let items=mylist.children;
+let newElem5=document.createElement("li");
+let text5="this is demo text 4,5";
+newElem5.textContent = text5;
 
+//--------------------------------
 
-console.log(Math.ceil(a));
-console.log(Math.ceil(b));
-console.log(Math.ceil(c));
-console.log(Math.ceil(d));
+let p1=document.createElement("p");
+let p2=document.createElement("p");
+let p3=document.createElement("p");
+let p4=document.createElement("p");
+p1.textContent="this a p1";
+p2.textContent="this a p2";
+p3.textContent="this a p3";
+p4.textContent="this a p4";
 
-
-console.log(Math.floor(a));
-console.log(Math.floor(b));
-console.log(Math.floor(c));
-console.log(Math.floor(d));
-
-console.log("g²: "+ Math.pow(8,2));
-console.log("e²: "+ Math.exp(2));
-console.log("|9|:"+ Math.abs(9));
-console.log("|-9|:"+ Math.abs(-9));
+mylist.append(p1);
+mylist.prepend(p2);
+mylist.before(p3);
+mylist.after(p4);
 
