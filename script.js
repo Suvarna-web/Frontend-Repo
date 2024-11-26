@@ -1,21 +1,4 @@
-let menuBtn = document.querySelector(".menu");
-let menuBox = document.querySelector(".meun-tools");
-let clear = document.querySelector(".clear");
-let loginPage = document.querySelector(".login");
-let loginButton = document.querySelector(".loginBtn");
-menuBtn.addEventListener("click", function () {
-  menuBox.classList.replace("disable", "active");
-});
-
-clear.addEventListener("click", function () {
-  menuBox.classList.replace("active", "disable");
-});
-
-loginButton.addEventListener("click", function () {
-  if (loginPage.classList.contains("disableLogin")) {
-    loginPage.classList.replace("disableLogin","activeLogin");
-  }
-  else{
-    loginPage.classList.replace("activeLogin","disableLogin");
-  }
-});
+console.log("Line a executed");
+console.log("Line b executed");
+console.log("Line c executed");
+console.log("Line d executed");
