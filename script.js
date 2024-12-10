@@ -1,32 +1,31 @@
-let info;
-setTimeout(function () {
-  ifn = { name: "Raju" };
-}, 2000);
 
-console.log(info);
+console.log("hello");
 
-// ------------------
+// windows location object  in js 
 
-let data = new Promise((resolve, reject) => {
-  if (false) {
-    resolve({ name: "Raju" });
-  } else {
-    reject("Data not found");
-  }
-});
+//http--port--domain--extension --//--route--:--parems--?--queries
 
-data
-  .then(() => {
-    console.log(data);
-    return data;
-  })
-  .then((value) => {
-    console.log(value);
-    return value;
-  })
-  .then((value) => {
-    console.log(value.name);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+//commands in commands prompt --
+//1.windows ip configure
+//2.ping www.google.com
+//3.tracert  route to www.google.com
+
+console.log(window)
+console.log(window.location)
+console.log(location.href)
+
+function onHit(){
+    location.reload();
+
+}
+
+function ChangeUrl(){
+    location.replace("https://www.google.com");
+    
+}
+
+function ChangeUrlWithHistory(){
+    location.assign("https://www.google.com");
+    
+}
+
